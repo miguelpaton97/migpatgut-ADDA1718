@@ -291,8 +291,10 @@ public class Tree<E> {
 		return r;
 	}
 	
+	@SuppressWarnings("unused")
 	private static Integer nId = 0;
 	
+	@SuppressWarnings("unused")
 	private static <E> void asignarNullAlId(Tree<E> t){
 		if(t==null){
 		} else if(t.isLeaf()) {
@@ -303,6 +305,7 @@ public class Tree<E> {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private static <E> String label(Tree<E> t) {
 		String s = "    " + "\"" + t.id + "\"";
 		if (t.isEmpty()) {
@@ -314,6 +317,7 @@ public class Tree<E> {
 	}
 
 	
+	@SuppressWarnings("unused")
 	private static <E> String arista(Tree<E> t,int index){
 		return "    "+"\""+t.id+"\""+" -> "+"\""+t.getElement(index).id +"\""+
 				" [label=\"" + index + "\"];";
